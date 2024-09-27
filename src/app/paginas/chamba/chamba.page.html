@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+     Chambita
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="block" color="success" id="chambita">Conseguir Chamba</ion-button>
+  <ion-alert
+  trigger="chambita"
+  header="A Short Title Is Best"
+  subHeader="A Sub Header Is Optional"
+  message="A message should be a short, complete sentence."
+  [buttons]="alertButtons"
+></ion-alert>
+</ion-content>

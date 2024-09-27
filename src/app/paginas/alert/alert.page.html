@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+     Alert
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button expand="block" color="warning" id="miAlert">Alerta</ion-button>
+  <ion-alert
+  trigger="miAlert"
+  header="A Short Title Is Best"
+  subHeader="A Sub Header Is Optional"
+  message="A message should be a short, complete sentence."
+  [buttons]="alertButtons"
+></ion-alert>
+</ion-content>
