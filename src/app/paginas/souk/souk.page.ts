@@ -9,7 +9,29 @@ export class SoukPage implements OnInit {
 
   constructor() { }
 
-  alertButtons = ['Aceptar', 'Cancelar'];
+  public actionSheetButtons = [
+    {
+      text: 'Delete',
+      role: 'destructive',
+      data: {
+        action: 'delete',
+      },
+    },
+    {
+      text: 'Comparta con Nosotros!!!',
+      data: {
+        action: 'share',
+      },
+    },
+    {
+      text: 'Cancel',
+      role: 'cancel',
+      data: {
+        action: 'cancel',
+      },
+    },
+  ];
+
   ngOnInit() {
     console.log("Hola");
   }

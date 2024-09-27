@@ -9,9 +9,8 @@ export class ChambaPage implements OnInit {
 
   constructor() { }
 
-  alertButtons = ['Aceptar', 'Cancelar'];
   ngOnInit() {
-    console.log("Hola");
+    
   }
 
 }

@@ -9,7 +9,11 @@ export class X3Page implements OnInit {
 
   constructor() { }
 
-  alertButtons = ['Aceptar', 'Cancelar'];
+  isModalOpen = false;
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
+  }
   ngOnInit() {
     console.log("Hola");
   }
